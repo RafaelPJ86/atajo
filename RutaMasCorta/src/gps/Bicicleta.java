@@ -25,7 +25,17 @@ public class Bicicleta {
             sum2 += camino2[i];
             sum3 += camino3[i];
         }
-        
+        for(int i=0; i<camino2.length; i++)
+        {
+            
+            sum2 += camino2[i];
+         
+        }
+        for(int i=0; i<camino3.length; i++)
+        {
+           
+            sum3 += camino3[i];
+        }
         if(sum1 < sum2 && sum1 < sum3)
         {
             return "camino 1"; 
@@ -53,9 +63,9 @@ public class Bicicleta {
 
     public static void main(String[] args) {
         Bicicleta bici = new Bicicleta();
-        int[] camino1 = {12,34,21,46,25};
+        int[] camino1 = {12,34,21,46,225};
         int[] camino2 = {24,1,5,64,10,15,21};
-        int[] camino3 = {1,5,6,7,8,10,20,46,104};
+        int[] camino3 = {1,5,6,7,8,10,20,46,304};
         System.out.println("El camino más corto es:"+Bicicleta.rutaCorta(camino1,camino2,camino3)+".");
     }
 }
